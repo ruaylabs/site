@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ruaylabs</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="./styles.css" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+	<header>
+	    <div class="container">
+		<div class="logo">
+		    <h1>Ruay<span>labs</span></h1>
+		</div>
+		<nav>
+		    <ul>
+			<li><a href="#about">About</a></li>
+		    </ul>
+		</nav>
+		<div class="mobile-menu-btn">
+		    <span></span>
+		    <span></span>
+		    <span></span>
+		</div>
+	    </div>
+	</header>
+
+	<section class="hero">
+            <div class="container">
+		<div class="hero-content">
+                    <h2>Products and services to fix actual problems</h2>
+                    <p>We develop cutting-edge software products that help businesses streamline operations, increase productivity, and drive growth.</p>
+                    <div class="cta-buttons">
+			<a href="mailto:hello@ruaylabs.com" class="btn secondary">Get in Touch</a>
+                    </div>
+		</div>
+		<div class="hero-image">
+                    <img src="/images/about-us.webp" alt="Software dashboard illustration">
+		</div>
+            </div>
+	</section>
+
+	<section id="about" class="about">
+            <div class="container">
+		<div class="about-content">
+                    <h2>About Ruaylabs</h2>
+                    <p>Founded in 2025, Ruaylabs is focused in build products for companies and end users. Also doing consulting and on demand development</p>
+		</div>
+		<div class="about-image">
+		</div>
+            </div>
+	</section>
+
+	<footer>
+            <div class="container">
+		<div class="footer-content">
+                    <div class="footer-logo">
+			<h2>Ruay<span>Labs</span></h2>
+			<p>Products and services to fix actual problems</p>
+                    </div>
+                    <div class="footer-links">
+			<div class="link-group">
+                            <h3>Company</h3>
+                            <ul>
+				<li><a href="#about">About Us</a></li>
+                            </ul>
+			</div>
+                    </div>
+		</div>
+		<div class="footer-bottom">
+                    <p>&copy; 2025 Ruaylabs. All rights reserved.</p>
+                    <div class="social-links">
+			<a href="https://twitter.com/ruaylabs" target="blank" aria-label="Twitter">Twitter</a>
+			<a href="https://github.com/ruaylabs" target="blank" aria-label="GitHub">GitHub</a>
+                    </div>
+		</div>
+            </div>
+	</footer>
+
+	<script>
+         // Simple mobile menu toggle
+         document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+             document.querySelector('nav').classList.toggle('active');
+             this.classList.toggle('active');
+         });
+
+         // Smooth scrolling for anchor links
+         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+             anchor.addEventListener('click', function(e) {
+                 e.preventDefault();
+                 document.querySelector(this.getAttribute('href')).scrollIntoView({
+                     behavior: 'smooth'
+                 });
+             });
+         });
+	</script>
+    </body>
+</html>
